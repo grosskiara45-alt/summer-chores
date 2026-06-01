@@ -21,5 +21,8 @@ Follow these steps to fork and clone the repository:
 
 To view the project locally, you can either open the project files in your code editor or open the HTML files in your browser.
 
+# Project Parts
+For the first iteration, I used the Callback Functions method. For this version, I implemented Promises in the promiseVersion.js file instead to create a cleaner streamline of code.
+
 # License and Credits
 This project was created for the Code:You Web Development January 2026 Pathway
