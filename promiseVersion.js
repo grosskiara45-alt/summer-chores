@@ -9,7 +9,7 @@ function mowYard(name){
 function weedEat(name){
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-            if(Math.random() < 0.50){
+            if(Math.random() < 0.4){
                 resolve(name + " finished using the weed eater.")
             }
             else{
@@ -22,7 +22,7 @@ function weedEat(name){
 function trimHedges(name){
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-            if(Math.random() < 0.50){
+            if(Math.random() < 0.5){
                 resolve(name + " finished trimming the hedges.")
             }
             else{
@@ -35,7 +35,7 @@ function trimHedges(name){
 function collectWood(name){
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-            if(Math.random() < 0.50){
+            if(Math.random() < 0.6){
                 resolve(name + " finished collecting wood.")
             }
             else{
@@ -48,7 +48,7 @@ function collectWood(name){
 function waterGarden(name){
     return new Promise((resolve,reject) => {
         setTimeout(() => {
-            if(Math.random() < 0.50){
+            if(Math.random() < 0.7){
                 resolve(name + " finished watering the garden.")
             }
             else{
