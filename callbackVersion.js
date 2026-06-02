@@ -5,9 +5,9 @@ function mowYard(name, callback){
 }, 2000);
 }
 
-function weedEat(name, isCompleted, callback){
+function weedEat(name, callback){
     setTimeout(() => {
-        if (isCompleted === true) {
+        if (Math.random() < 0.50) {
             console.log(name + " finished using the weed eater.")
             callback();
         }
@@ -17,9 +17,9 @@ function weedEat(name, isCompleted, callback){
     }, 1500);
 }
 
-function trimHedges(name, isCompleted, callback){
+function trimHedges(name, callback){
     setTimeout(() => {
-        if (isCompleted === true) {
+        if (Math.random() < 0.50) {
             console.log(name + " finished trimming the hedges.")
             callback();
         }
@@ -29,9 +29,9 @@ function trimHedges(name, isCompleted, callback){
     }, 1000);
 }
 
-function collectWood(name, isCompleted, callback){
+function collectWood(name, callback){
     setTimeout(() => {
-        if (isCompleted === true) {
+        if (Math.random() < 0.50) {
             console.log(name + " finished collecting wood.")
             callback();
         }
@@ -41,9 +41,9 @@ function collectWood(name, isCompleted, callback){
     }, 2500);
 }
 
-function waterGarden(name, isCompleted, callback){
+function waterGarden(name, callback){
     setTimeout(() => {
-        if (isCompleted === true) {
+        if (Math.random() < 0.50) {
             console.log(name + " finished watering the garden.")
             callback();
         }
@@ -53,15 +53,15 @@ function waterGarden(name, isCompleted, callback){
     }, 500);
 }
 
-function doSummerChores (name, isCompleted){
+function doSummerChores (name){
     if (typeof name !== 'string'){
         console.error("Name must be letters!")
     }
     mowYard(name, () => {
-        weedEat(name, true, () => {
-            trimHedges(name, true, () => {
-                collectWood(name, true, () =>{
-                    waterGarden(name, true, () => {
+        weedEat(name, () => {
+            trimHedges(name, () => {
+                collectWood(name, () =>{
+                    waterGarden(name, () => {
                         console.log(name + " finished all their chores!");
                     })
                 })
